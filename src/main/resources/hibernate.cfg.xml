@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://192.168.58.130:3306/taiwan_railway_api_info</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping class="com.railway.info.model.News"/>
+    <mapping resource="Newshbm.xml"/>
+    <mapping class="com.railway.info.model.Station"/>
+    <mapping resource="Stationhbm.xml"/>
+    <mapping class="com.railway.info.model.StationExit"/>
+    <mapping resource="StationExithbm.xml"/>
+    <mapping class="com.railway.info.model.StationExitMap"/>
+    <mapping resource="StationExitMaphbm.xml"/>
+    <mapping class="com.railway.info.model.TrainInfo"/>
+    <mapping resource="TrainInfohbm.xml"/>
+    <mapping class="com.railway.info.model.TrainTimetable"/>
+    <mapping resource="TrainTimetablehbm.xml"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

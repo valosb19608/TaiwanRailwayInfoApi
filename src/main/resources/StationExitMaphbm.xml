@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.railway.info.model.StationExitMap" table="station_exit_map" schema="taiwan_railway_api_info">
+        <id name="sn" column="sn"/>
+        <property name="stationId" column="station_id"/>
+        <property name="mapUrl" column="map_url"/>
+    </class>
+</hibernate-mapping>

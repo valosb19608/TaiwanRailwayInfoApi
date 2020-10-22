@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.railway.info.model.TrainTimetable" table="train_timetable" schema="taiwan_railway_api_info">
+        <composite-id>
+            <key-property name="trainId" column="train_id"/>
+            <key-property name="stopSequence" column="stop_sequence"/>
+        </composite-id>
+        <property name="stationId" column="station_id"/>
+        <property name="arrivalTime" column="arrival_time"/>
+        <property name="departureTime" column="departure_time"/>
+    </class>
+</hibernate-mapping>

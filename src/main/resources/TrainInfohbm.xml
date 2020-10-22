@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.railway.info.model.TrainInfo" table="train_info" schema="taiwan_railway_api_info">
+        <id name="trainNo" column="train_no"/>
+        <property name="routeId" column="route_id"/>
+        <property name="direction" column="direction"/>
+        <property name="trainTypeId" column="train_type_id"/>
+        <property name="trainTypeCode" column="train_type_code"/>
+        <property name="trainTypeName" column="train_type_name"/>
+        <property name="tripHeadSign" column="trip_head_sign"/>
+        <property name="tripLine" column="trip_line"/>
+        <property name="wheelChairFlag" column="wheel_chair_flag"/>
+        <property name="packageServiceFlag" column="package_service_flag"/>
+        <property name="diningFlag" column="dining_flag"/>
+        <property name="breastFeedFlag" column="breast_feed_flag"/>
+        <property name="bikeFlag" column="bike_flag"/>
+        <property name="carFlag" column="car_flag"/>
+        <property name="dailyFlag" column="daily_flag"/>
+        <property name="extraTrainFlag" column="extra_train_flag"/>
+        <property name="note" column="note"/>
+        <property name="category" column="category"/>
+    </class>
+</hibernate-mapping>

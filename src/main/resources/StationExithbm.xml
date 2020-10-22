@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.railway.info.model.StationExit" table="station_exit" schema="taiwan_railway_api_info">
+        <id name="sn" column="sn"/>
+        <property name="exitId" column="exit_id"/>
+        <property name="stationId" column="station_id"/>
+        <property name="exitNameTw" column="exit_name_tw"/>
+        <property name="exitNameEn" column="exit_name_en"/>
+        <property name="positionLat" column="position_lat"/>
+        <property name="positionLon" column="position_lon"/>
+        <property name="locationDescription" column="location_description"/>
+        <property name="stair" column="stair"/>
+        <property name="escalator" column="escalator"/>
+        <property name="elevator" column="elevator"/>
+        <property name="modifyTime" column="modify_time"/>
+    </class>
+</hibernate-mapping>
